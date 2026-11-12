@@ -1,0 +1,181 @@
+/* Modern Minimal remix: Inter, 6px corners, blue actions, neutral surfaces. */
+.modern-minimal{--ink:var(--foreground);--green:var(--primary-action);--green-dark:var(--primary-hover);--green-light:var(--accent);--line:var(--border);--glass:var(--card);--shadow:0 1px 2px #00000005}
+.modern-minimal body{background:var(--background);color:var(--foreground)}
+.modern-minimal body,.modern-minimal body *{font-family:var(--font-sans)}
+.modern-minimal :focus-visible{outline:2px solid var(--ring);outline-offset:4px}
+.modern-minimal p,.modern-minimal small{color:var(--muted-foreground)}
+.modern-minimal .ambient,.modern-minimal .art-orbit,.modern-minimal .glass-star,.modern-minimal .art-note{display:none}
+.modern-minimal :is(.glass,.btn,.brand-mark,.desktop-nav,.nav-link,.availability,.process-strip,.small-icon,.process-icon,.calculator,.quantity-stepper,.result-currency,.tracking-section,.track-node,.orders-panel,.demo-banner,.stat-card,.search-box,.filter-tab,.order-email-icon,.status-badge,.empty-icon,.app-dialog,.icon-button,.review-block,.success-mark,.success-reference,.detail-amount,.detail-email-list,.detail-status-message,.receipt,.delete-confirm,.form-error,.toast,.mobile-nav){border-radius:var(--radius)}
+.modern-minimal :is(.glass,.calculator,.process-strip,.tracking-section,.orders-panel,.stat-card,.review-block,.success-reference,.detail-amount,.detail-email-list,.receipt,.delete-confirm){border:1px solid var(--border);background:var(--card);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.modern-minimal :is(.btn,.icon-button,.brand-mark,.small-icon,.process-icon,.track-node,.empty-icon,.success-mark){box-shadow:none}
+.modern-minimal .site-header{border-bottom:1px solid var(--border);height:92px}
+.modern-minimal .brand-mark{background:var(--primary-action);color:var(--primary-foreground)}
+.modern-minimal .brand-mark:after{display:none}
+.modern-minimal .brand-dot,.modern-minimal .title-dot{color:var(--primary)}
+.modern-minimal .desktop-nav{background:var(--muted);border:1px solid var(--border);box-shadow:none}
+.modern-minimal .nav-link{color:var(--muted-foreground);font-size:12px;border:1px solid transparent}
+.modern-minimal .nav-link.active{color:var(--foreground);background:var(--card);box-shadow:0 1px 2px #00000005;border-color:var(--border)}
+.modern-minimal .nav-link:hover{color:var(--foreground);background:var(--card)}
+.modern-minimal .btn{font-size:13px;border-radius:var(--radius);font-weight:600}
+.modern-minimal .btn-primary{background:var(--primary-action);border:1px solid var(--primary-action);color:var(--primary-foreground);box-shadow:none}
+.modern-minimal .btn-primary:hover{background:var(--primary-hover);border-color:var(--primary-hover);box-shadow:none}
+.modern-minimal .btn-glass,.modern-minimal .btn-outline{background:var(--card);border:1px solid var(--border);color:var(--foreground);box-shadow:none}
+.modern-minimal .btn-glass:hover,.modern-minimal .btn-outline:hover{background:var(--secondary)}
+.modern-minimal .btn-soft{background:var(--accent);color:var(--accent-foreground);border:1px solid var(--border)}
+.modern-minimal .btn-danger{background:var(--danger-surface);color:var(--danger-text);border:1px solid var(--destructive)}
+.modern-minimal .btn-text{color:var(--foreground);background:transparent}
+.modern-minimal .my-orders .icon{color:var(--muted-foreground)}
+.modern-minimal .icon-button{background:var(--card);border:1px solid var(--border);color:var(--muted-foreground)}
+.modern-minimal .icon-button:hover{background:var(--secondary);color:var(--foreground)}
+.modern-minimal .count-badge{background:var(--primary-action);color:var(--primary-foreground)}
+.modern-minimal .status-dot{background:var(--primary);box-shadow:none}
+.modern-minimal :is(.section-kicker,.subtle-link,.detail-link,.back-link){color:var(--link)}
+.modern-minimal .section-kicker{font-size:12px}
+.modern-minimal .hero{padding-top:42px;padding-bottom:50px;min-height:575px}
+.modern-minimal .hero h1{color:var(--foreground);font-size:54px;letter-spacing:-1.6px}
+.modern-minimal .hero-description{color:var(--muted-foreground);font-size:15px}
+.modern-minimal .availability{background:var(--muted);border:1px solid var(--border);color:var(--muted-foreground);box-shadow:none}
+.modern-minimal .availability-divider{background:var(--border)}
+.modern-minimal .gmail-label,.modern-minimal .hero-assurances{color:var(--muted-foreground)}
+.modern-minimal .hero-assurances{font-size:11px}
+.modern-minimal .hero-assurances .icon{color:var(--muted-foreground)}
+.modern-minimal .floating-notification{background:var(--card);border:1px solid var(--border);box-shadow:0 2px 8px #00000005;transform:none;animation:none}
+.modern-minimal .notification-icon{background:var(--accent);color:var(--link);box-shadow:none;border-radius:var(--radius)}
+.modern-minimal .notification-sub,.modern-minimal .notification-time{color:var(--muted-foreground)}
+.modern-minimal .mail-object{transform:none;filter:none}
+.modern-minimal .mail-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:none;transform:none}
+.modern-minimal .mail-card>span{color:var(--muted-foreground)}
+.modern-minimal .gmail-mark{filter:none}
+.modern-minimal .mail-card-lines i{background:var(--border)}
+.modern-minimal .envelope-back{background:var(--accent);border:1px solid var(--border);border-radius:var(--radius);box-shadow:none}
+.modern-minimal .envelope-front{background:var(--accent);border-radius:var(--radius)}
+.modern-minimal .envelope-front:after{background:linear-gradient(34deg,transparent 49.5%,var(--card) 50%,transparent 50.7%),linear-gradient(-34deg,transparent 49.5%,var(--card) 50%,transparent 50.7%);opacity:.6}
+.modern-minimal .envelope-shine{border-color:var(--border);border-radius:var(--radius);box-shadow:none}
+.modern-minimal .envelope-seal{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);color:var(--link);box-shadow:none}
+.modern-minimal .valuation-card{background:var(--card);border:1px solid var(--border);box-shadow:0 4px 14px #00000005;border-radius:var(--radius);transform:none}
+.modern-minimal .valuation-top,.modern-minimal .valuation-bottom,.modern-minimal .valuation-amount .valuation-unit{color:var(--muted-foreground)}
+.modern-minimal .valuation-amount{color:var(--foreground)}
+.modern-minimal .valuation-bottom{border-color:var(--border);font-size:10px}
+.modern-minimal .tiny-pill{border:1px solid var(--border);background:var(--muted);color:var(--muted-foreground);border-radius:var(--radius)}
+.modern-minimal .small-icon,.modern-minimal .process-icon,.modern-minimal .order-email-icon,.modern-minimal .empty-icon{background:var(--secondary);color:var(--secondary-foreground);border:1px solid var(--border)}
+.modern-minimal .process-strip{background:var(--muted)}
+.modern-minimal .strip-heading{border-color:var(--border)}
+.modern-minimal .strip-heading .section-kicker,.modern-minimal .process-number{color:var(--muted-foreground)}
+.modern-minimal .process-steps h3{font-size:13px;color:var(--foreground)}
+.modern-minimal .process-steps p{font-size:11px;color:var(--muted-foreground)}
+.modern-minimal .process-top{gap:10px}
+.modern-minimal .calculator-title h3{font-size:14px}
+.modern-minimal .calculator-control label{font-size:12px;color:var(--muted-foreground)}
+.modern-minimal .quantity-stepper{background:var(--card);border-color:var(--input)}
+.modern-minimal .quantity-stepper button{color:var(--muted-foreground)}
+.modern-minimal .quantity-stepper button:hover{color:var(--link)}
+.modern-minimal .quantity-range{accent-color:var(--primary-action)}
+.modern-minimal .range-labels,.modern-minimal .calculator-result>div>span,.modern-minimal .calculator-footnote{color:var(--muted-foreground);font-size:11px}
+.modern-minimal .calculator-result{border-color:var(--border)}
+.modern-minimal .calculator-result strong{color:var(--foreground)}
+.modern-minimal .result-currency{background:var(--secondary);color:var(--secondary-foreground)}
+.modern-minimal .pricing-note{font-size:11px;color:var(--muted-foreground)}
+.modern-minimal .pricing-note .icon{color:var(--muted-foreground)}
+.modern-minimal .tracking-section{background:var(--muted)}
+.modern-minimal .track-node{background:var(--card);border:1px solid var(--border);color:var(--muted-foreground)}
+.modern-minimal .track-node:last-child{background:var(--accent);color:var(--link);transform:none}
+.modern-minimal .track-line{border-color:var(--border)}
+.modern-minimal .tracking-copy p{font-size:12px;color:var(--muted-foreground)}
+.modern-minimal .faq-list details{border-color:var(--border)}
+.modern-minimal .faq-list summary{font-size:13px;color:var(--foreground)}
+.modern-minimal .faq-list details p{font-size:12px;color:var(--muted-foreground)}
+.modern-minimal .faq-list summary .icon{color:var(--muted-foreground)}
+.modern-minimal .closing-cta{background:var(--muted);border:1px solid var(--border);border-radius:var(--radius)}
+.modern-minimal .site-footer{padding-top:35px}
+.modern-minimal .footer-link,.modern-minimal .footer-top p,.modern-minimal .footer-bottom,.modern-minimal .prototype-label{color:var(--muted-foreground)}
+.modern-minimal .footer-link:hover{color:var(--link)}
+.modern-minimal .footer-link{font-size:11px}
+.modern-minimal .footer-bottom{font-size:10px}
+.modern-minimal .mobile-nav{background:var(--card);border:1px solid var(--border);box-shadow:0 4px 12px #0000000d}
+.modern-minimal .mobile-nav a:hover{background:var(--secondary)}
+.modern-minimal .orders-top p{font-size:13px}
+.modern-minimal .demo-banner{background:var(--muted);border:1px solid var(--border);color:var(--muted-foreground);font-size:11px}
+.modern-minimal .demo-banner strong,.modern-minimal .demo-banner .icon{color:var(--secondary-foreground)}
+.modern-minimal .switch-label{color:var(--muted-foreground);font-size:11px}
+.modern-minimal .switch-track{background:var(--border);border-color:var(--border)}
+.modern-minimal .switch-label input:checked+.switch-track{background:var(--primary-action);border-color:var(--primary-action)}
+.modern-minimal .stat-card>div{color:var(--muted-foreground);font-size:12px}
+.modern-minimal .stat-card .icon,.modern-minimal .stat-card strong span{color:var(--muted-foreground)}
+.modern-minimal .stat-card:last-child strong{color:var(--foreground)}
+.modern-minimal .filter-tab{color:var(--muted-foreground);font-size:11px;background:transparent}
+.modern-minimal .filter-tab.active{background:var(--secondary);color:var(--foreground)}
+.modern-minimal .filter-tab span{background:var(--card);color:var(--muted-foreground)}
+.modern-minimal .search-box{background:var(--muted);border:1px solid var(--input)}
+.modern-minimal .search-box input{font-size:12px;color:var(--foreground)}
+.modern-minimal .search-box input::placeholder{color:var(--muted-foreground)}
+.modern-minimal .search-box .icon{color:var(--muted-foreground)}
+.modern-minimal .orders-table th{background:var(--muted);color:var(--muted-foreground);border-color:var(--border);font-size:11px}
+.modern-minimal .orders-table td{border-color:var(--border);font-size:12px}
+.modern-minimal .order-email-cell strong{font-size:12px;color:var(--foreground)}
+.modern-minimal .order-email-cell small,.modern-minimal .order-date,.modern-minimal .order-date small{color:var(--muted-foreground);font-size:10px}
+.modern-minimal .example-tag{background:var(--secondary);color:var(--muted-foreground);border-radius:var(--radius)}
+.modern-minimal .order-email-button:hover strong{color:var(--link)}
+.modern-minimal .status-badge{font-size:10px}
+.modern-minimal .status-badge.reviewing,.modern-minimal .status-badge.accepted{background:var(--accent);color:var(--accent-foreground)}
+.modern-minimal .status-badge.offered{background:var(--warning-surface);color:var(--warning)}
+.modern-minimal .status-badge.paid{background:var(--success-surface);color:var(--success)}
+.modern-minimal .status-badge.cancelled,.modern-minimal .status-badge.rejected{background:var(--danger-surface);color:var(--danger-text)}
+.modern-minimal .table-foot,.modern-minimal .dashboard-note{color:var(--muted-foreground);font-size:10px}
+.modern-minimal .app-dialog{background:var(--card);color:var(--card-foreground);border:1px solid var(--border);box-shadow:0 12px 50px #0000001a}
+.modern-minimal .app-dialog::backdrop{background:#00000059;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.modern-minimal .submit-aside{background:var(--muted);border-color:var(--border)}
+.modern-minimal .submit-aside:after{display:none}
+.modern-minimal .submit-aside h2{color:var(--foreground)}
+.modern-minimal .submit-aside p,.modern-minimal .aside-safe,.modern-minimal .aside-label,.modern-minimal .form-step-label{color:var(--muted-foreground)}
+.modern-minimal .form-step-label>span{background:var(--border)}
+.modern-minimal .form-step-label>span.current{background:var(--primary)}
+.modern-minimal .form-field>span{font-size:12px;color:var(--foreground)}
+.modern-minimal .form-field input,.modern-minimal .form-field select,.modern-minimal .form-field textarea,.modern-minimal .demo-controls-row input{background:var(--background);border:1px solid var(--input);border-radius:var(--radius);color:var(--foreground);font-size:13px}
+.modern-minimal .form-field input:focus,.modern-minimal .form-field select:focus,.modern-minimal .form-field textarea:focus{border-color:var(--ring);box-shadow:0 0 0 2px color-mix(in srgb,var(--ring) 20%,transparent)}
+.modern-minimal .form-field input::placeholder,.modern-minimal .form-field textarea::placeholder{color:var(--muted-foreground);font-size:12px}
+.modern-minimal .form-field select option{background:var(--background);color:var(--foreground)}
+.modern-minimal .field-help,.modern-minimal .form-note,.modern-minimal .form-description,.modern-minimal .form-check{color:var(--muted-foreground);font-size:11px}
+.modern-minimal .form-check input{accent-color:var(--primary-action)}
+.modern-minimal .form-check a{color:var(--link)}
+.modern-minimal .form-error,.modern-minimal .delete-confirm{background:var(--danger-surface);color:var(--danger-text);border-color:var(--destructive)}
+.modern-minimal .review-block{background:var(--muted)}
+.modern-minimal .review-block-label,.modern-minimal .review-meta dt,.modern-minimal .review-disclaimer{color:var(--muted-foreground);font-size:11px}
+.modern-minimal .review-meta dd,.modern-minimal .review-email{color:var(--foreground)}
+.modern-minimal .review-meta{border-color:var(--border)}
+.modern-minimal .review-email .icon{color:var(--muted-foreground)}
+.modern-minimal .success-mark{background:var(--accent);color:var(--link);border:1px solid var(--border);box-shadow:none}
+.modern-minimal .success-reference{background:var(--muted)}
+.modern-minimal .success-reference strong{color:var(--foreground)}
+.modern-minimal .detail-header{border-color:var(--border)}
+.modern-minimal .detail-header-meta,.modern-minimal .copy-text,.modern-minimal .detail-header .section-kicker{color:var(--muted-foreground)}
+.modern-minimal .detail-amount{background:var(--muted)}
+.modern-minimal .detail-amount strong{color:var(--foreground)}
+.modern-minimal .detail-amount p,.modern-minimal .unit-price-note{color:var(--muted-foreground);font-size:11px}
+.modern-minimal .detail-amount .small-icon{background:var(--card);color:var(--secondary-foreground)}
+.modern-minimal .timeline-node{background:var(--secondary);border-color:var(--border);color:var(--muted-foreground)}
+.modern-minimal .timeline li:not(:last-child):after{background:var(--border)}
+.modern-minimal .timeline li.done .timeline-node{background:var(--accent);border-color:var(--border);color:var(--link)}
+.modern-minimal .timeline li.done:not(:last-child):after{background:var(--primary)}
+.modern-minimal .timeline li.current .timeline-node{background:var(--primary-action);border-color:var(--primary-action);color:var(--primary-foreground);box-shadow:0 0 0 4px var(--accent)}
+.modern-minimal .timeline li strong,.modern-minimal .timeline li small{color:var(--muted-foreground)}
+.modern-minimal .timeline li.done strong,.modern-minimal .timeline li.current strong{color:var(--foreground)}
+.modern-minimal .detail-section-label{color:var(--foreground);font-size:12px}
+.modern-minimal .detail-email-list{background:var(--muted)}
+.modern-minimal .detail-email-list>div,.modern-minimal .detail-meta dd{color:var(--foreground);font-size:12px}
+.modern-minimal .detail-email-list .icon,.modern-minimal .detail-meta dt{color:var(--muted-foreground)}
+.modern-minimal .detail-status-message{background:var(--muted);color:var(--muted-foreground);font-size:11px}
+.modern-minimal .demo-control{border-color:var(--border)}
+.modern-minimal .demo-control-heading,.modern-minimal .demo-control p{color:var(--muted-foreground);font-size:10px}
+.modern-minimal .receipt{background:var(--muted)}
+.modern-minimal .receipt-head{color:var(--foreground)}
+.modern-minimal .receipt>p{color:var(--muted-foreground);font-size:10px}
+.modern-minimal .danger-zone>button{color:var(--danger-text)}
+.modern-minimal .info-dialog p,.modern-minimal .info-dialog li{color:var(--muted-foreground);font-size:12px}
+.modern-minimal .toast{background:var(--popover);border:1px solid var(--border);color:var(--popover-foreground);box-shadow:0 2px 12px #0000000d;backdrop-filter:none}
+.modern-minimal .toast>.icon{color:var(--link)}
+.modern-minimal .skip-link{background:var(--primary-action)}
+.modern-minimal .noscript-message{background:var(--secondary);color:var(--secondary-foreground)}
+@media(max-width:1150px){.modern-minimal .hero h1{font-size:47px}.modern-minimal .process-steps p{font-size:10px}}
+@media(max-width:940px){.modern-minimal .hero h1{font-size:42px}.modern-minimal .hero-assurances{font-size:9px}.modern-minimal .nav-link{font-size:10px}}
+@media(max-width:760px){.modern-minimal .site-header{height:82px}.modern-minimal .hero{padding-top:35px;padding-bottom:35px;min-height:auto}.modern-minimal .hero h1{font-size:47px}.modern-minimal .hero-description{font-size:14px}.modern-minimal .hero-assurances{font-size:10px}.modern-minimal .process-steps h3{font-size:12px}.modern-minimal .process-steps p{font-size:11px}.modern-minimal .process-steps>li+li{border-color:var(--border)}.modern-minimal .process-number{background:var(--muted);border-color:var(--border)}.modern-minimal .stat-card>div{font-size:10px}.modern-minimal .orders-table th,.modern-minimal .orders-table td{font-size:10px}.modern-minimal .order-email-cell strong{font-size:11px}.modern-minimal .status-badge{font-size:9px}.modern-minimal .filter-tab{font-size:10px}.modern-minimal .form-field input,.modern-minimal .form-field textarea{font-size:16px}.modern-minimal .form-field select{font-size:12px}.modern-minimal .detail-email-list>div,.modern-minimal .detail-meta dd{font-size:11px}.modern-minimal .tracking-copy p{font-size:11px}}
+@media(max-width:420px){.modern-minimal .hero h1{font-size:40px}.modern-minimal .hero-assurances{font-size:8px}.modern-minimal .hero-actions .btn{font-size:11px}.modern-minimal .availability{font-size:9px}.modern-minimal .my-orders{font-size:9px}.modern-minimal .form-check{font-size:10px}.modern-minimal .filter-tab{font-size:9px}.modern-minimal .status-badge{font-size:8px}.modern-minimal .order-email-cell strong{font-size:10px}.modern-minimal .orders-top>.btn{font-size:10px}}

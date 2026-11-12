@@ -1,0 +1,14 @@
+/* Dock geometry remains stable while surfaces follow the theme tokens. */
+.zera-dock-position{z-index:15;bottom:max(14px,env(safe-area-inset-bottom));width:max-content;max-width:100%;pointer-events:none}
+.dock-scroll{pointer-events:auto;scrollbar-width:none;overscroll-behavior-x:contain;max-width:calc(100vw - 16px);padding-top:9px;padding-bottom:3px;touch-action:pan-x}
+.dock-scroll::-webkit-scrollbar{display:none}
+.zera-dock-panel{gap:12px;padding:0 14px 12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);box-shadow:0 4px 16px #0000000a;isolation:isolate}
+.zera-dock-item{padding:0;border:1px solid var(--border);border-radius:var(--radius);background:var(--secondary);color:var(--secondary-foreground);box-shadow:none;cursor:pointer;align-self:flex-end;outline-offset:4px;line-height:1;flex:none}
+.zera-dock-item:hover{background:var(--accent);color:var(--accent-foreground)}
+.zera-dock-item:focus-visible{outline:2px solid var(--ring);box-shadow:0 0 0 4px var(--background)}
+.zera-dock-item[data-active]{background:var(--accent);border-color:var(--primary);color:var(--accent-foreground)}
+.zera-dock-item[data-active]:after{content:'';height:3px;width:3px;border-radius:50%;position:absolute;bottom:-7px;left:calc(50% - 1.5px);background:var(--primary)}
+.zera-dock-primary,.zera-dock-primary:hover{background:var(--primary-action);color:var(--primary-foreground);border-color:var(--primary-action)}
+.dock-tooltip{pointer-events:none;font-family:var(--font-sans);font-size:11px;font-weight:400;line-height:1.6;padding:5px 10px;background:var(--popover);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 2px 5px #0000000a;color:var(--popover-foreground)}
+.site-footer{padding-bottom:125px}.toast-container{bottom:108px}
+@media(max-width:640px){.zera-dock-position{bottom:max(10px,env(safe-area-inset-bottom))}.zera-dock-panel{gap:8px;padding:0 10px 11px}.dock-tooltip{font-size:10px;padding:5px 8px}.site-footer{padding-bottom:110px}.toast-container{bottom:95px}}

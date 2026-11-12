@@ -1,0 +1,42 @@
+/* Rounded floating bar stays pinned throughout scrolling. */
+.modern-minimal body{padding-top:96px}
+.modern-minimal .site-header.reference-topbar{--topbar-padding:22px;position:fixed;inset:16px auto auto 50%;width:min(1180px,calc(100% - 48px));height:64px;margin:0;display:block;border:1px solid var(--border);border-radius:999px;z-index:25;background:var(--background);transform:translateX(-50%);box-shadow:0 5px 22px #00000008;transition:background-color .25s,box-shadow .25s}
+.modern-minimal .reference-topbar[data-scrolled="true"]{background:color-mix(in srgb,var(--background) 94%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 6px 24px #0000000c}
+.modern-minimal .reference-topbar .topbar-inner{width:100%;padding:0 var(--topbar-padding)}
+.topbar-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.modern-minimal .reference-topbar .brand{font-size:24px;gap:8px;letter-spacing:-1px;color:var(--foreground);flex:none}
+.modern-minimal .reference-topbar .brand-mark{height:29px;width:29px;border-radius:0;background:transparent;color:var(--foreground);box-shadow:none}
+.modern-minimal .reference-topbar .brand-mark .icon{height:27px;width:27px;stroke-width:1.65}
+.modern-minimal .reference-topbar .brand-dot{color:inherit}
+.topbar-actions{display:flex;align-items:center;justify-content:flex-end;flex:none;--start-width:86px}
+.topbar-language{position:relative;flex:none}
+.topbar-language summary{display:flex;align-items:center;justify-content:center;gap:7px;height:44px;padding:0 13px;border:1px solid var(--border);border-radius:999px;background:var(--background);color:var(--foreground);font-size:11px;font-weight:500;line-height:1;list-style:none;cursor:pointer;user-select:none;transition:background-color .2s,border-color .2s}
+.topbar-language summary::-webkit-details-marker{display:none}
+.topbar-language summary:hover,.topbar-language[open] summary{background:var(--muted);border-color:color-mix(in srgb,var(--foreground) 20%,var(--border))}
+.topbar-globe{width:15px;height:15px;flex:none}
+.topbar-chevron{width:12px;height:12px;transition:transform .2s}
+.topbar-language[open] .topbar-chevron{transform:rotate(180deg)}
+.topbar-language-panel{position:absolute;right:0;top:calc(100% + 10px);width:180px;padding:7px;border:1px solid var(--border);border-radius:12px;background:var(--popover);color:var(--popover-foreground);box-shadow:0 8px 24px #0000000c}
+.topbar-language-panel>span{display:block;padding:7px 10px;font-size:10px;color:var(--muted-foreground)}
+.topbar-language-panel button{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:10px;border-radius:6px;background:var(--muted);font-size:12px;text-align:left}
+.topbar-language-panel button:hover{background:var(--secondary)}
+.topbar-language-panel .icon{width:15px;height:15px}
+.topbar-start-slot{display:block;width:0;overflow:hidden;opacity:0;visibility:hidden;margin-left:0;transition:width .4s cubic-bezier(.22,.75,.25,1),margin-left .4s cubic-bezier(.22,.75,.25,1),opacity .25s,visibility .4s}
+.topbar-start{display:block;width:var(--start-width);height:44px;padding:0;border:0;border-radius:999px;background:#15191e;color:#fff;overflow:hidden;white-space:nowrap;font-size:12px;font-weight:500;transform:translateX(14px);transition:transform .4s cubic-bezier(.22,.75,.25,1),background-color .2s}
+.reference-topbar[data-start-visible="true"] .topbar-start-slot{width:var(--start-width);opacity:1;visibility:visible;margin-left:8px}
+.reference-topbar[data-start-visible="true"] .topbar-start{transform:translateX(0)}
+.modern-minimal .topbar-start:focus-visible{outline-offset:-4px}
+.topbar-start:hover{background:#30353c}
+.dark .topbar-start{background:#f5f5f5;color:#171717}
+.dark .topbar-start:hover{background:#d4d4d4}
+.modern-minimal .footer-nav{display:flex;align-items:center;flex-wrap:wrap;gap:16px 26px;margin-bottom:30px;padding-bottom:22px;border-bottom:1px solid var(--border)}
+.modern-minimal .footer-nav .nav-link{display:inline-flex;align-items:center;gap:6px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:var(--muted-foreground);font-size:11px}
+.modern-minimal .footer-nav .nav-link:hover,.modern-minimal .footer-nav .nav-link.active{color:var(--foreground)}
+.modern-minimal .footer-nav .count-badge{font-size:9px}
+@media(max-width:760px){.modern-minimal body{padding-top:80px}.modern-minimal .site-header.reference-topbar{--topbar-padding:12px;top:10px;width:calc(100% - 24px);height:60px}.topbar-inner{gap:16px}.modern-minimal .reference-topbar .brand{font-size:22px;gap:7px}.modern-minimal .reference-topbar .brand-mark{width:26px;height:26px}.modern-minimal .reference-topbar .brand-mark .icon{width:25px;height:25px}.topbar-actions{--start-width:80px}.topbar-language summary,.topbar-start{height:42px}.topbar-language summary{padding:0 11px;gap:6px}.topbar-start{font-size:11px}.modern-minimal .footer-nav{gap:15px 22px}}
+@media(max-width:360px){.modern-minimal .site-header.reference-topbar{--topbar-padding:10px}.modern-minimal .reference-topbar .brand{font-size:20px;gap:5px}.topbar-inner{gap:6px}.topbar-actions{--start-width:70px}.topbar-language summary{padding:0 10px}}
+@media(prefers-reduced-motion:reduce){.modern-minimal .site-header.reference-topbar,.topbar-start-slot,.topbar-start,.topbar-language summary,.topbar-chevron{transition:none}}
+
+.signup-route #dock-root,.signup-route .site-footer{display:none}
+.signup-route .form-field input{border-radius:8px;background:var(--background)}
+@media(max-width:360px){.reference-topbar .topbar-language{display:none}.topbar-actions{--start-width:90px}}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th" class="modern-minimal">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Zeramaill — ส่งอีเมล Gmail เพื่อประเมินราคาและติดตามสถานะ ตั้งแต่ส่งรายการจนถึงขั้นตอนโอนเงิน ในดีไซน์ Modern Minimal ที่ใช้งานง่าย">
+  <title>zeramaill — อีเมลที่ไม่ได้ใช้ เปลี่ยนเป็นรายได้</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/thai-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <script>
+    try {
+      if (localStorage.getItem('zeramaill.theme') === 'dark') document.documentElement.classList.add('dark');
+    } catch (_) {}
+  </script>
+  <script src="/app.js" defer></script>
+  <script src="/topbar.js" defer></script>
+
+  <script type="module" src="/src/main.tsx"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3M7 12h10M9 8h6M9 16h6"/></symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5a2 2 0 0 0-2-2H6a3 3 0 0 0 0 6h14v11H6a3 3 0 0 1-3-3V6"/><path d="M20 12h-5v5h5M17 14.5h.01"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7 18-4-7-7-4L21 3ZM10 14 21 3"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></symbol>
+      <symbol id="i-bank" viewBox="0 0 24 24"><path d="m3 9 9-6 9 6H3ZM5 10v8m7-8v8m7-8v8M3 21h18M3 18h18"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m5-5-5 5 5 5"/></symbol>
+    </defs>
+  </svg>
+  <div class="ambient" aria-hidden="true"><div class="ambient-blue"></div><div class="ambient-mint"></div><div class="ambient-line"></div></div>
+  <header class="site-header reference-topbar" data-start-visible="false" data-scrolled="false">
+    <div class="topbar-inner shell">
+      <a class="brand" href="#home" aria-label="zeramaill หน้าแรก"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span><span>zeramaill<span class="brand-dot">.</span></span></a>
+      <div class="topbar-actions">
+        <details class="topbar-language" id="topbar-language">
+          <summary aria-label="ภาษาเว็บไซต์: ไทย"><svg class="topbar-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/></svg><span lang="en">TH</span><svg class="topbar-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 6 3 3 3-3"/></svg></summary>
+          <div class="topbar-language-panel"><span>ภาษาเว็บไซต์</span><button type="button" id="topbar-thai" lang="th" aria-label="ไทย ภาษาปัจจุบัน"><span>ไทย</span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></button></div>
+        </details>
+        <div class="topbar-start-slot"><a class="topbar-start" href="#signup" style="display:flex;align-items:center;justify-content:center">สมัครสมาชิก</a></div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+<section id="signup-view" hidden style="min-height:80vh;display:grid;place-items:center;padding:55px 24px">
+<div style="width:100%;max-width:360px"><a href="#home" class="brand" style="font-size:22px">zeramaill.</a><h1 style="font-size:28px;margin:35px 0 10px">สร้างบัญชีของคุณ</h1><p style="font-size:12px;margin-bottom:28px">เริ่มต้นใช้งาน Zeramaill</p>
+<form id="signup-form"><label class="form-field"><span>ชื่อผู้ใช้</span><input name="username" autocomplete="username" required minlength="3" maxlength="30" placeholder="ชื่อผู้ใช้ของคุณ"></label><label class="form-field"><span>รหัสผ่าน</span><input name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="128" placeholder="อย่างน้อย 8 ตัวอักษร"></label><label class="form-field"><span>ยืนยันรหัสผ่าน</span><input name="confirm" type="password" autocomplete="new-password" required placeholder="กรอกรหัสผ่านอีกครั้ง"></label><label style="font-size:12px;display:flex;gap:8px;margin:15px 0"><input id="show-signup-password" type="checkbox">แสดงรหัสผ่าน</label><p id="signup-error" role="alert" style="color:var(--danger-text);font-size:12px;margin:12px 0"></p><button type="submit" class="btn btn-full" style="background:var(--foreground);color:var(--background);border-radius:8px">สมัครสมาชิก</button><p style="font-size:11px;margin-top:18px;line-height:1.8"></p></form><p id="signup-result" role="status" hidden style="margin-top:20px">ตรวจสอบข้อมูลเรียบร้อยแล้ว ระบบสมาชิกยังรอเชื่อมต่อเซิร์ฟเวอร์</p><a href="#home" style="display:block;font-size:12px;margin-top:28px">กลับหน้าแรก</a></div></section>
+    <div id="home-view">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="availability"><span class="status-dot"></span> พื้นที่ใหม่ของอีเมลที่ไม่ได้ใช้ <span class="availability-divider"></span><span class="gmail-label">@gmail.com</span></div>
+          <h1 id="hero-title">อีเมลที่ไม่ได้ใช้<br>เปลี่ยนเป็นรายได้</h1>
+          <p class="hero-description">ส่งอีเมลของคุณให้เราประเมินราคา<br class="desktop-break">รู้ทุกความเคลื่อนไหว ตั้งแต่ส่งจนถึงรับเงิน</p>
+          <div class="hero-actions"><button class="btn btn-primary" data-open-submit><svg class="icon"><use href="#i-send"/></svg>ส่งอีเมลให้ประเมิน<svg class="icon trailing"><use href="#i-arrow"/></svg></button><a class="btn btn-text" href="#how-it-works"><svg class="icon"><use href="#i-play"/></svg>ทำงานอย่างไร</a></div>
+          <div class="hero-assurances"><span><svg class="icon"><use href="#i-shield"/></svg>ไม่ขอรหัสผ่านหรือ OTP</span><span><svg class="icon"><use href="#i-check"/></svg>ยืนยันราคาก่อนทุกครั้ง</span></div>
+        </div>
+        <div class="hero-art" aria-label="การประเมินอีเมล ราคา 5 ถึง 10 บาท">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+
+          <div class="mail-object" aria-hidden="true"><div class="mail-card"><svg class="gmail-mark" viewBox="0 0 64 48"><path fill="#4285f4" d="M4 47h11V19L4 11z"/><path fill="#34a853" d="M49 47h11V11L49 19z"/><path fill="#fbbc04" d="M49 19 60 11V7c0-6-6-8-10-5l-9 7z"/><path fill="#ea4335" d="M15 19 32 32 49 19V5L32 18 15 5z"/><path fill="#c5221f" d="m4 11 11 8V5L10 2C5-1 0 2 0 7v4z"/></svg><span>yourname@gmail.com</span><div class="mail-card-lines"><i></i><i></i></div></div><div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-shine"></div><span class="envelope-seal"><svg class="icon"><use href="#i-arrow-up"/></svg></span></div>
+          <div class="valuation-card glass"><div class="valuation-top"><span class="small-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span>มูลค่าใหม่ของอีเมลคุณ</span><span class="tiny-pill">เบื้องต้น</span></div><div class="valuation-amount"><span>฿</span>5–10<span class="valuation-unit">/ อีเมล</span></div><div class="valuation-bottom"><div><span class="status-dot"></span>ประเมินตามคุณภาพอีเมล</div><svg class="icon"><use href="#i-arrow-up"/></svg></div></div>
+          <span class="art-note">ส่งง่าย · ติดตามได้ · ตัดสินใจเอง</span>
+          <div class="glass-star star-one" aria-hidden="true">✦</div><div class="glass-star star-two" aria-hidden="true">✦</div>
+        </div>
+      </section>
+      <section class="process-strip shell" id="how-it-works" aria-labelledby="process-title">
+        <div class="strip-heading"><span class="section-kicker">เส้นทางอีเมลของคุณ</span><h2 id="process-title">ง่ายในทุกขั้นตอน</h2><a href="#orders" class="subtle-link">ติดตามรายการ<svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <ol class="process-steps">
+          <li><div class="process-top"><span class="process-icon"><svg class="icon"><use href="#i-send"/></svg></span><span class="process-number">01</span></div><h3>ส่งอีเมล</h3><p>กรอกอีเมลที่ต้องการขาย</p></li>
+          <li><div class="process-top"><span class="process-icon"><svg class="icon"><use href="#i-scan"/></svg></span><span class="process-number">02</span></div><h3>รอตรวจสอบ</h3><p>ตรวจข้อมูลและคุณภาพ</p></li>
+          <li><div class="process-top"><span class="process-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span class="process-number">03</span></div><h3>ประเมินราคา</h3><p>รับข้อเสนอที่เหมาะสม</p></li>
+          <li><div class="process-top"><span class="process-icon"><svg class="icon"><use href="#i-check"/></svg></span><span class="process-number">04</span></div><h3>ยืนยันราคา</h3><p>พอใจแล้วค่อยตกลง</p></li>
+          <li><div class="process-top"><span class="process-icon"><svg class="icon"><use href="#i-wallet"/></svg></span><span class="process-number">05</span></div><h3>รับเงินโอน</h3><p>ดูสรุปรายการได้ทุกเมื่อ</p></li>
+        </ol>
+      </section>
+      <section class="pricing-section shell" id="pricing" aria-labelledby="pricing-title">
+        <div class="pricing-copy"><span class="section-kicker">ราคาโปร่งใส ตัดสินใจได้เอง</span><h2 id="pricing-title">รู้มูลค่าก่อน<br>เริ่มต้นครั้งใหม่</h2><p>อีเมลแต่ละบัญชีมีคุณภาพต่างกัน<br>ลองคำนวณมูลค่าเบื้องต้น ก่อนส่งประเมิน</p><div class="pricing-note"><svg class="icon"><use href="#i-info"/></svg><span>ช่วงราคา ฿5–10 เป็นการประเมินเบื้องต้น<br>ข้อเสนอจริงต้องผ่านการตรวจสอบก่อน</span></div></div>
+        <div class="calculator glass"><div class="calculator-title"><span class="small-icon"><svg class="icon"><use href="#i-mail"/></svg></span><h3>ลองประเมินมูลค่าอีเมล</h3><span class="tiny-pill">เบื้องต้น</span></div><div class="calculator-control"><label for="email-quantity">จำนวนอีเมล</label><div class="quantity-stepper"><button id="quantity-minus" aria-label="ลดจำนวนอีเมล">−</button><input type="number" id="email-quantity" min="1" max="50" value="5" inputmode="numeric"><button id="quantity-plus" aria-label="เพิ่มจำนวนอีเมล">+</button></div></div><input class="quantity-range" type="range" id="quantity-range" min="1" max="50" value="5" aria-label="จำนวนอีเมลสำหรับประเมิน"><div class="range-labels"><span>1 อีเมล</span><span>50 อีเมล</span></div><div class="calculator-result"><div><span>มูลค่าประเมินเบื้องต้น</span><strong id="calculated-price">฿25–50</strong></div><span class="result-currency">THB</span></div><button class="btn btn-primary btn-full" data-open-submit>ส่งอีเมลให้ประเมิน<svg class="icon"><use href="#i-arrow"/></svg></button><p class="calculator-footnote">ยังไม่มีการขายจนกว่าคุณจะยืนยันราคา</p></div>
+      </section>
+      <section class="tracking-section shell" aria-labelledby="track-title"><div class="tracking-illustration" aria-hidden="true"><span class="track-line"></span><span class="track-node"><svg class="icon"><use href="#i-mail"/></svg></span><span class="track-node"><svg class="icon"><use href="#i-check"/></svg></span><span class="track-node"><svg class="icon"><use href="#i-wallet"/></svg></span></div><div class="tracking-copy"><h2 id="track-title">รายการของคุณ ไปถึงไหนแล้ว?</h2><p>ตรวจสอบสถานะ ข้อเสนอ และสรุปการโอน ในที่เดียว</p></div><a href="#orders" class="btn btn-glass">ติดตามรายการ<svg class="icon"><use href="#i-arrow"/></svg></a></section>
+
+      <section class="faq-section shell" id="faq" aria-labelledby="faq-title"><div><span class="section-kicker">ก่อนเริ่มส่งอีเมล</span><h2 id="faq-title">เรื่องที่คุณ<br>อาจอยากรู้</h2><p>อีกนิดเดียว ก็พร้อมเริ่มต้น</p></div><div class="faq-list"><details open><summary>ส่งอีเมลอะไรเข้ามาได้บ้าง?<svg class="icon"><use href="#i-plus"/></svg></summary><p>แบบฟอร์มรับเฉพาะที่อยู่ @gmail.com ที่คุณเป็นเจ้าของ ระบบบันทึกข้อมูลรายการไว้ในบัญชีสมาชิก ไม่มีการเข้าใช้งานบัญชี Gmail</p></details><details><summary>ต้องส่งรหัสผ่านหรือ OTP ไหม?<svg class="icon"><use href="#i-plus"/></svg></summary><p>ไม่ต้องส่ง แบบฟอร์มนี้ใช้เพียงที่อยู่อีเมลและข้อมูลเบื้องต้น กรุณาอย่าใส่รหัสผ่าน รหัส OTP หรือข้อมูลกู้คืนในช่องหมายเหตุ</p></details><details><summary>ถ้าไม่พอใจราคาประเมิน ทำอย่างไร?<svg class="icon"><use href="#i-plus"/></svg></summary><p>คุณสามารถปฏิเสธข้อเสนอได้จากหน้ารายละเอียดรายการ ก่อนกดยืนยันราคา ไม่มีการดำเนินการขายอัตโนมัติ</p></details><details><summary>รับเงินทางไหน และโอนจริงหรือยัง?<svg class="icon"><use href="#i-plus"/></svg></summary><p>รองรับพร้อมเพย์และบัญชีธนาคาร ผู้ดูแลโอนผ่านธนาคารแล้วบันทึกเลขอ้างอิงในรายการ เว็บไซต์ไม่ได้สั่งโอนอัตโนมัติ</p></details><details><summary>ข้อมูลและรายการของฉันถูกเก็บไว้ที่ไหน?<svg class="icon"><use href="#i-plus"/></svg></summary><p>ข้อมูลบันทึกในฐานข้อมูลฝั่งเซิร์ฟเวอร์ เข้าสู่ระบบบัญชีเดิมเพื่อดูรายการจากอุปกรณ์อื่น ติดต่อผู้ดูแลเพื่อขอแก้ไขหรือลบข้อมูล</p></details></div></section>
+      <section class="closing-cta shell"><span class="brand-mark"><svg class="icon"><use href="#i-mail"/></svg></span><h2>ให้อีเมลของคุณ<br>ได้เริ่มต้นอีกครั้ง</h2><button class="btn btn-primary" data-open-submit>ส่งอีเมลให้ประเมิน<svg class="icon"><use href="#i-arrow"/></svg></button><span>เริ่มจากอีเมลเดียวก็ได้</span></section>
+    </div>
+    <section class="orders-view shell" id="orders-view" aria-labelledby="orders-title" hidden>
+      <div class="orders-top"><div><a href="#home" class="back-link"><svg class="icon"><use href="#i-back"/></svg>กลับหน้าแรก</a><h1 id="orders-title">รายการของฉัน<span class="title-dot">.</span></h1><p>ทุกขั้นตอนของอีเมลคุณ รวมไว้ที่นี่</p></div><button class="btn btn-primary" data-open-submit><svg class="icon"><use href="#i-plus"/></svg>ส่งอีเมลใหม่</button></div>
+      <div class="order-stats" id="order-stats"></div>
+      <div class="orders-panel glass"><div class="orders-toolbar"><div class="filter-tabs" role="group" aria-label="กรองสถานะ"><button class="filter-tab active" data-filter="all">ทั้งหมด <span id="all-count">0</span></button><button class="filter-tab" data-filter="reviewing">รอตรวจสอบ</button><button class="filter-tab" data-filter="offered">รอยืนยันราคา</button><button class="filter-tab" data-filter="accepted">รอโอนเงิน</button><button class="filter-tab" data-filter="paid">สำเร็จแล้ว</button></div><label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input id="order-search" type="search" placeholder="ค้นหาอีเมล / เลขรายการ" aria-label="ค้นหารายการ"></label></div><div class="orders-table-wrap"><table class="orders-table"><thead><tr><th>รายการอีเมล</th><th>วันที่ส่ง</th><th>สถานะ</th><th class="align-right">มูลค่า</th><th><span class="sr-only">รายละเอียด</span></th></tr></thead><tbody id="orders-tbody"></tbody></table></div><div class="empty-state" id="empty-state" hidden><span class="empty-icon"><svg class="icon"><use href="#i-mail"/></svg></span><h3 id="empty-title">ยังไม่มีรายการอีเมล</h3><p id="empty-description">เริ่มจากอีเมลแรกของคุณ แล้วติดตามความคืบหน้าได้ที่นี่</p><button class="btn btn-primary btn-small" data-open-submit>ส่งอีเมลแรก</button></div><div class="table-foot"><span id="results-count"></span><span><svg class="icon"><use href="#i-shield"/></svg>ข้อมูลจากบัญชีสมาชิก</span></div></div>
+
+    </section>
+  </main>
+  <footer class="site-footer shell">
+    <nav class="footer-nav" aria-label="เมนูหลัก">
+      <a href="#home" class="nav-link active" data-nav="home">หน้าแรก</a>
+      <a href="#how-it-works" class="nav-link" data-nav="how-it-works">วิธีขายอีเมล</a>
+      <a href="#pricing" class="nav-link" data-nav="pricing">ราคาประเมิน</a>
+
+      <a href="#faq" class="nav-link" data-nav="faq">คำถามที่พบบ่อย</a>
+      <a href="#orders" class="nav-link" data-nav="orders">รายการของฉัน <span class="count-badge" id="order-count" hidden>0</span></a>
+    </nav><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><svg class="icon"><use href="#i-mail"/></svg></span><span>zeramaill<span class="brand-dot">.</span></span></a><p>มูลค่าใหม่ของอีเมลที่ไม่ได้ใช้</p><div><button class="footer-link" data-policy="terms">เงื่อนไขการใช้งาน</button><button class="footer-link" data-policy="privacy">ความเป็นส่วนตัว</button></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> zeramaill</span><span>Made for a fresh start.</span></div></footer>
+  <dialog id="submit-dialog" class="app-dialog submit-dialog" aria-labelledby="submit-title"><button class="icon-button dialog-close" data-close-dialog aria-label="ปิดแบบฟอร์ม"><svg class="icon"><use href="#i-close"/></svg></button><div class="submit-layout"><aside class="submit-aside"><a class="brand" href="#home" data-close-dialog><span class="brand-mark"><svg class="icon"><use href="#i-mail"/></svg></span><span>zeramaill.</span></a><div><span class="section-kicker">เริ่มต้นรายการใหม่</span><h2>อีเมลของคุณ<br>มีโอกาสใหม่<br>อยู่เสมอ</h2><p>ส่งข้อมูลเบื้องต้น<br>แล้วค่อยตัดสินใจหลังรู้ราคา</p></div><div class="aside-safe"><svg class="icon"><use href="#i-shield"/></svg><span>ไม่ขอรหัสผ่านหรือ OTP</span></div><span class="aside-label"></span></aside><div class="submit-content" id="submit-content"></div></div></dialog>
+  <dialog id="detail-dialog" class="app-dialog detail-dialog" aria-labelledby="detail-title"><div id="detail-content"></div></dialog>
+  <dialog id="info-dialog" class="app-dialog info-dialog" aria-labelledby="info-title"><button class="icon-button dialog-close" data-close-dialog aria-label="ปิด"><svg class="icon"><use href="#i-close"/></svg></button><div id="info-content"></div></dialog>
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <div id="dock-root"></div>
+  <noscript><div class="noscript-message">เปิด JavaScript ในเบราว์เซอร์เพื่อใช้แบบฟอร์มและติดตามรายการ</div></noscript>
+</body>
+</html>
